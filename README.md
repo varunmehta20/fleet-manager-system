@@ -100,30 +100,35 @@ Reads file line by line, parses fields, and reconstructs vehicle objects.
 - Display Model Count
 - Exit
 
-## Project Structure
-
 FleetManagementSystem/
 │
-├─ Main/
-│ └─ Main.java
-│
-├─ Vehicle/
-│ ├─ Vehicle.java
-│ ├─ Car.java
-│ ├─ Truck.java
-│ ├─ Bus.java
-│ ├─ Airplane.java
-│ └─ CargoShip.java
+├─ Exceptions/
+│   ├─ InsufficientFuelException.java
+│   ├─ InvalidOperationException.java
+│   └─ OverloadException.java
 │
 ├─ Fleet/
-│ └─ FleetManager.java
+│   ├─ AirVehicle.java
+│   ├─ LandVehicle.java
+│   ├─ WaterVehicle.java
+│   └─ FleetManager.java
 │
 ├─ Interface/
-│ └─ VehicleOperations.java
+│   ├─ CargoCarrier.java
+│   ├─ FuelConsumable.java
+│   ├─ Maintainable.java
+│   └─ PassengerCarrier.java
 │
-└─ Exceptions/
-└─ VehicleNotFoundException.java
-
+├─ Main/
+│   └─ Main.java
+│
+├─ Vehicle/
+│   ├─ Vehicle.java
+│   ├─ Car.java
+│   ├─ Truck.java
+│   ├─ Bus.java
+│   ├─ Airplane.java
+│   └─ CargoShip.java
 
 ---
 
